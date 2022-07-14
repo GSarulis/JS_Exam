@@ -1,0 +1,57 @@
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* Mobile first */
+.wrapper {
+  min-height: 100vh;
+  min-width: calc(100vw - (100vw - 100%));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h1 {
+  margin: 50px;
+  color: #333;
+  padding-bottom: 50px;
+}
+
+#output {
+  display: flex; /* establish flex container */
+  flex-direction: column; /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center; /* center items horizontally, in this case */
+  height: 50%;
+}
+.car-card {
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 12px;
+  margin: 32px;
+  width: 60%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.car-card:hover {
+  background-color: #ececec;
+  transition: 500ms;
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
